@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+    <title>Home</title>
+    <style>
+        header {
+            background-color: transparent !important;
+            position: absolute;
+        }
+
+        section {
+            position: relative;
+            height: 148vh;
+            width: 100%;
+            background: rgb(0, 49, 154) !important;
+            background: linear-gradient(135deg, rgba(0, 49, 154, 1) 0%, rgba(0, 1, 36, 1) 19%, rgba(7, 1, 49, 1) 71%, rgba(49, 3, 131, 1) 100%) !important;
+        }
+
+        .sec-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .left-txt-sec-1 {
+            margin-top: var(--nav-height);
+            padding-top: 54px;
+            padding-left: 44px;
+            width: 54%;
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            float: left;
+            flex-direction: column;
+        }
+
+        .left-txt-sec-1 .txt-bold {
+            font-family: Alliance No\.1, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            letter-spacing: -2px;
+            font-size: 4.2rem;
+            font-weight: 900;
+            color: white;
+        }
+
+        .left-txt-sec-1 .txt-small {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 30px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: rgb(211, 207, 207);
+        }
+
+        .custom-shape-divider-bottom-1613365543 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .custom-shape-divider-bottom-1613365543 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 51px;
+        }
+
+        .custom-shape-divider-bottom-1613365543 .shape-fill {
+            fill: #FFFFFF;
+        }
+
+
+        .parent-of-rotate {
+            display: flex;
+            float: right;
+            align-items: center;
+        }
+
+
+        .box {
+
+            position: absolute;
+            /* top: calc(50% - 150px);
+            left: calc(50% - 100px); */
+            transform: perspective(1000px) rotateY(-45deg);
+            width: 200px;
+            height: 300px;
+            transform-style: preserve-3d;
+        }
+
+        .box div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: rotate-perspective 5s linear infinite;
+        }
+
+        .box div span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: linear-gradient(0deg, #f1f1f1, #bbb, #f1f1f1);
+            border-radius: 20px;
+        }
+
+        .box div span:nth-child(1) {
+            /* background: url(https://images.unsplash.com/photo-1613415959194-0cb09aa135f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80); */
+            transform: rotateX(0deg);
+        }
+
+        .box div span:nth-child(2) {
+            /* background: url(https://images.unsplash.com/photo-1613262666734-d17cdf902bde?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80); */
+            transform: rotateX(45deg);
+        }
+
+        .box div span:nth-child(3) {
+            /* background: url(https://images.unsplash.com/photo-1613425269135-fb9f19ae7be8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */
+            transform: rotateX(-45deg);
+        }
+
+        .box div span:nth-child(4) {
+            /* background: url(https://images.unsplash.com/photo-1613425293559-762167f59486?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80); */
+            transform: rotateX(90deg);
+        }
+
+        @keyframes rotate-perspective {
+            0% {
+                transform: perspective(1000px) rotateX(0deg);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateX(359deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        {{>navbar}}
+        <div class="sec-1">
+
+
+            <div class="left-txt-sec-1">
+                <div class="txt-bold">
+                    Why are we here ? Why are you here ?
+                </div>
+                <div class="txt-small">
+                    Are we freaking enough to waste your time ? Or respectful enough to make your time
+                    valuable enough ? No we are not like that...we value your quality time and hope for the wellness of
+                    the
+                    society and stay on the path of sustainable growth of the society !
+                </div>
+            </div>
+
+            <div class="parent-of-rotate">
+
+                <div class="box">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-shape-divider-bottom-1613365543">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+</body>
+
+</html>

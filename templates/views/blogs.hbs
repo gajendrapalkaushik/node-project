@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+    <style>
+        aside ul {
+            display: flex;
+            flex-direction: column;
+            margin-top: 13px;
+            margin-inline: 12px;
+        }
+
+        aside ul li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-block: 5px;
+            border-radius: 3px;
+            background-color: aliceblue;
+        }
+
+        aside ul li:hover {
+            border-left: 4px solid grey;
+        }
+
+        aside ul li a {
+            font-family: sans-serif;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            padding-block: 15px;
+        }
+
+        .container {
+            overflow: auto;
+            padding-top: 56px;
+            overflow-x: hidden;
+        }
+
+        .reference-box {
+            display: flex;
+            margin-left: 20%;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    {{>navbar}}
+
+    <aside id="left-sidebar">
+        <ul>
+            <li> <a href=""> Starter Templates </a> </li>
+            <li> <a href=""> Guide </a> </li>
+            <li> <a href=""> Tips And Tricks </a> </li>
+            <li> <a href=""> CheatSheet </a> </li>
+            <li> <a href=""> Create Your Own CheatSheet </a> </li>
+        </ul>
+    </aside>
+
+    <div class="container">
+
+        <!-- Starter Template  -->
+
+        <div class="reference-box">
+            <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Title here&lt;/title&gt;
+
+    &lt;!-- Link Your stylesheet here  --&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+
+    &lt;style&gt;
+        /* Your styling attributes here */
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!-- Your content here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        </div>
+
+        <!-- Bootstrap CSS  -->
+
+        <div class="reference-box">
+            <pre class="language-html"><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+            
+&lt;head&gt;
+    &lt;!-- Required meta tags --&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=shrink-to-fit=no"&gt;
+            
+    &lt;!-- Bootstrap CSS CDN(Content Delivery Network) --&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.cbootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cYiJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"&gt;
+            
+    &lt;title&gt;Bootstrap Starter Template&lt;/title&gt;
+&lt;/head&gt;
+            
+&lt;body&gt;
+    &lt;!-- Your content here --&gt;
+            
+    &lt;!-- Optional JavaScript --&gt;
+    &lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
+    &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4Yf+8abtTE1Pi6jizo"
+        crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq86dIHNDz0W1"
+        crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/jbootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEanJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;/body&gt;
+            
+&lt;/html&gt;
+
+</code></pre>
+        </div>
+
+        <!-- Tailwiond CSS  -->
+
+        <div class="reference-box">
+            <pre class="language-html"><code>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;!-- Required meta tags --&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+
+    &lt;!-- Tailwind CSS CDN(Content Delivery Network) --&gt;
+    &lt;link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"&gt;
+    
+    &lt;title&gt;Your Title here&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!-- Your content here --&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </code></pre>
+        </div>
+    </div>
+</body>
+
+</html>

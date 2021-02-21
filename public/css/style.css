@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --nav-height: 56px;
+}
+
+body {
+  background-color: white;
+}
+
+.active {
+  font-weight: 900;
+}
+
+header {
+  margin-top: 0 !important;
+  position: fixed;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  height: var(--nav-height) !important;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(36, 41, 46);
+  z-index: 1;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 24px !important;
+  color: white;
+}
+
+.logo-text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  margin-left: 24px !important;
+  color: white;
+  text-decoration: none;
+  font-size: 2.1rem;
+  font-weight: 350;
+  letter-spacing: 1.5px;
+}
+
+header .logo a svg {
+  color: white;
+  height: 32px;
+  width: 32px;
+}
+
+#nav-content {
+  margin-left: 30px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#center-nav {
+  width: 41%;
+}
+
+#center-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#center-nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+#center-nav ul li a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 555;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-dropdown-svg {
+  padding-top: 7px;
+  padding-left: 7px;
+}
+
+#right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 12px !important;
+}
+
+#right-nav .search-box {
+  display: flex;
+  align-items: center;
+}
+
+#right-nav .search-box input {
+  height: 36px;
+  width: 240px;
+  border: 5px solid transparent;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+#right-nav .search-text {
+  padding-left: 7px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+}
+
+#right-nav ::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  opacity: 0.57;
+  font-size: 1.4rem;
+}
+
+#right-nav .search-slash {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 25px;
+  border: 1px solid white;
+  opacity: 0.57;
+  /* border: 1px solid #444d56; */
+  width: 19px;
+  border-radius: 5px;
+}
+
+#left-sidebar {
+  margin-top: 56px;
+  background-color: rgb(31, 31, 31);
+  position: fixed;
+  float: left;
+  height: 100vh;
+  width: 20%;
+  overflow-x: hidden;
+}

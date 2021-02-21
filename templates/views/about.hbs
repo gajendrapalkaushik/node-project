@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        section {
+            padding-top: var(--nav-height) !important;
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1e2124;
+            overflow: hidden;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: var(--nav-height);
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 320px;
+            background: #fff;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            filter: blur(4px);
+            border-radius: 10px;
+        }
+
+        .swiper-slide-active {
+            filter: blur(0);
+            background: #fff;
+        }
+
+        .testimonialBox {
+            position: relative;
+            width: 100%;
+            padding: 40px;
+            padding-top: 90px;
+            color: #999;
+        }
+
+
+        .testimonialBox .quote {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            opacity: 0.2;
+        }
+
+        .testimonialBox .content p {
+            font-size: 1.7rem;
+        }
+
+        .testimonialBox .details {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+
+        .testimonialBox .details .imgBx {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+
+        .testimonialBox .details .imgBx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonialBox .details h3 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #2196f3;
+            line-height: 1.1em;
+        }
+
+        .testimonialBox .details h3 span {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .swiper-container-3d .swiper-slide-shadow-left,
+        .swiper-container-3d .swiper-slide-shadow-right {
+            background-image: none;
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <section>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/right-quote.png" class="quote">
+                        <div class="content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, doloribus? Alias, amet
+                                mollitia. Corporis earum eaque possimus error, aliquam minima ipsa velit sapiente
+                                assumenda. Sed sit amet orci non tellus congue semper ut nec mauris. Pellentesque
+                                habitant morbi tristique senectus et netus et </p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/adarsh.jpg">
+                                </div>
+                                <h3>Someone Famous <br><span>Creative engineer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/right-quote.png" class="quote">
+                        <div class="content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, doloribus? Alias, amet
+                                mollitia. Corporis earum eaque possimus error, aliquam minima ipsa velit sapiente
+                                assumenda. Sed sit amet orci non tellus congue semper ut nec mauris. Pellentesque
+                                habitant morbi tristique senectus et netus et malesuada </p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/robot.jpg">
+                                </div>
+                                <h3>Someone Famous <br><span>Creative engineer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/right-quote.png" class="quote">
+                        <div class="content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, doloribus? Alias, amet
+                                mollitia. Corporis earum eaque possimus error, aliquam minima ipsa velit sapiente
+                                assumenda. Sed sit amet orci non tellus congue semper ut nec mauris. Pellentesque
+                                habitant morbi tristique senectus et netus et </p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/warrior.jpg">
+                                </div>
+                                <h3>Someone Famous <br><span>Creative engineer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/right-quote.png" class="quote">
+                        <div class="content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, doloribus? Alias, amet
+                                mollitia. Corporis earum eaque possimus error, aliquam minima ipsa velit sapiente
+                                assumenda. Sed sit amet orci non tellus congue semper ut nec mauris. Pellentesque
+                                habitant morbi tristique senectus et netus et malesuada </p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/elon-musk.jpg">
+                                </div>
+                                <h3>Someone Famous <br><span>Creative engineer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <!-- Initialize Swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+            },
+            loop: true,
+        });
+    </script>
+
+</body>
+
+</html>
